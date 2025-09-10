@@ -1,0 +1,106 @@
+:root{
+    --bg: #f6f8fb;
+    --primary: #0d6efd;
+    --accent: #6610f2;
+    --sidebar-bg: #0f1723;
+    --muted: #6c757d;
+    --card-shadow: 0 6px 18px rgba(15,23,35,0.06);
+    --radius: 10px;
+    --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+    font-family: var(--font);
+    background: var(--bg);
+    margin: 0;
+    color: #212529;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* NAVBAR */
+.navbar.bg-gradient{
+    background: linear-gradient(90deg, #0b5ed7 0%, #6610f2 100%);
+    box-shadow: 0 4px 14px rgba(11,78,215,0.12);
+}
+.brand-mark{
+    width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.12);
+    display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;
+    font-size:14px;
+}
+.brand-title{font-weight:700;line-height:1}
+.brand-sub{font-size:11px;display:block;margin-top:-2px}
+
+/* LAYOUT */
+.sidebar{
+    min-width:250px;
+    max-width:250px;
+    height: calc(100vh - 56px);
+    position: sticky;
+    top:56px;
+    padding-top: 1rem;
+}
+.sidebar .nav-link{
+    color: #cfe3ff;
+    padding: .55rem .75rem;
+    border-radius:6px;
+    margin-bottom: .15rem;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active{
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+}
+.sidebar-divider{height:1px}
+
+/* Main content spacing */
+.main-content{
+    padding: 28px;
+    width: 100%;
+    min-height: calc(100vh - 130px);
+}
+
+/* Cards */
+.card{
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+}
+
+/* Tables */
+.table thead th{
+    background: #fff;
+    border-bottom: 2px solid #e9ecef;
+}
+.table tbody tr td{
+    vertical-align: middle;
+}
+
+/* Code block styling */
+.code-block{
+    background: #0b1220;
+    color: #d8e8ff;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+/* Footer */
+.footer{border-top:1px solid #e9ecef}
+
+/* Responsive: collapse sidebar */
+body.sidebar-collapsed .sidebar{
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 999;
+}
+@media (max-width: 768px){
+    .sidebar{position: absolute; left:0; top:56px; z-index:1000}
+    body.sidebar-collapsed .main-content{padding-left:16px}
+}
+
+/* small helpers */
+.small-muted{color:var(--muted);font-size:.9rem}
+.text-primary{color:var(--primary) !important}
