@@ -5,10 +5,27 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primario: #3a86ff;
+    --color-secundario: #7b2cbf;
+    --color-acento: #ff6b6b;
+    --color-fondo: #ffffff;
+    --color-texto: #2c2c2c;
+    --color-gris: #f9f9fb;
+    --sombra-suave: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+body.dark {
+    --color-fondo: #1c1c28;
+    --color-texto: #e6e6f0;
+    --color-gris: #242432;
+    --sombra-suave: 0 6px 18px rgba(0,0,0,0.35);
+}
+
 body {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    background: #ffffff;
-    color: #2c2c2c;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
     line-height: 1.7;
     font-size: 1rem;
     transition: background 0.4s ease, color 0.4s ease;
@@ -16,131 +33,82 @@ body {
 
 /* ---------------- HEADER ---------------- */
 header {
-    background: linear-gradient(135deg, #3a86ff, #7b2cbf);
-    padding: 20px 40px;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
     color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  }
-  
-  .header-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: nowrap;
-  }
-  
-  .logo-nombre {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-shrink: 0;
-  }
-  
-  .logo-nombre img {
-    width: 70px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  
-  .nombre {
-    font-size: 1.3rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  
-  .titulo-container {
-    text-align: right;
-    min-width: 280px;
-  }
-  
-  .titulo-container h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 1.1;
-  }
-  
-  .titulo-container p {
-    margin: 4px 0 0;
-    font-size: 1.1rem;
-    color: #e9e9f3;
-  }
-  
-  /* Responsive */
-  @media (max-width: 700px) {
-    .header-container {
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .logo-nombre {
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-  
-    .titulo-container {
-      text-align: center;
-      min-width: auto;
-      width: 100%;
-    }
-  
-    .nombre {
-      font-size: 1.1rem;
-    }
-  
-    .logo-nombre img {
-      width: 50px;
-    }
-  
-    .titulo-container h1 {
-      font-size: 2rem;
-    }
-  
-    .titulo-container p {
-      font-size: 1rem;
-    }
-  }
-  
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease forwards;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    animation: fadeIn 2s ease forwards;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
 /* ---------------- MAIN ---------------- */
 main {
     max-width: 1100px;
     margin: 70px auto;
     padding: 0 25px;
+    animation: fadeIn 1.5s ease forwards;
 }
 
 /* ---------------- SECCIONES DE SEMANAS ---------------- */
-.semanas ul,
-.lista-semanas {
+.semanas ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
     margin-top: 50px;
-    padding-left: 0;
 }
 
 .semanas li {
-    background: #ffffff;
+    background: var(--color-fondo);
     padding: 32px 24px;
     border-radius: 16px;
     text-align: center;
     border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: var(--sombra-suave);
     transition: all 0.35s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    transform: scale(1);
+}
+
+.semanas li:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: var(--color-primario);
+    box-shadow: 0 15px 30px rgba(58,134,255,0.2);
 }
 
 .semanas li::before {
     content: "";
     position: absolute;
-    top: 0; left: -100%;
+    top: 0; 
+    left: -100%;
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, rgba(58,134,255,0.15), rgba(123,44,191,0.15));
@@ -151,16 +119,10 @@ main {
     left: 0;
 }
 
-.semanas li:hover {
-    transform: translateY(-6px) scale(1.02);
-    border-color: #3a86ff;
-    box-shadow: 0 10px 25px rgba(58,134,255,0.15);
-}
-
 /* Links */
 .semanas a {
     text-decoration: none;
-    color: #3a86ff;
+    color: var(--color-primario);
     font-weight: 600;
     font-size: 1.15rem;
     transition: color 0.3s;
@@ -174,12 +136,12 @@ main {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: #ff6b6b;
+    background: var(--color-acento);
     transition: width 0.3s;
 }
 
 .semanas a:hover {
-    color: #ff6b6b;
+    color: var(--color-acento);
 }
 
 .semanas a:hover::after {
@@ -190,18 +152,18 @@ main {
 .info {
     margin-top: 80px;
     padding: 50px;
-    background: #f9f9fb;
+    background: var(--color-gris);
     border-radius: 18px;
     text-align: center;
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    box-shadow: var(--sombra-suave);
 }
 
 .info:hover {
-    transform: translateY(-5px);
-    border-color: #7b2cbf;
-    box-shadow: 0 8px 20px rgba(123,44,191,0.15);
+    transform: translateY(-6px);
+    border-color: var(--color-secundario);
+    box-shadow: 0 12px 28px rgba(123,44,191,0.2);
 }
 
 /* ---------------- BOTÓN ---------------- */
@@ -209,7 +171,7 @@ main {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 32px;
-    background: linear-gradient(135deg, #3a86ff, #7b2cbf);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -220,9 +182,9 @@ main {
 }
 
 .btn:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #ff6b6b, #ff9f1c);
-    box-shadow: 0 10px 28px rgba(255,107,107,0.25);
+    transform: scale(1.08) rotate(-1deg);
+    background: linear-gradient(135deg, var(--color-acento), #ff9f1c);
+    box-shadow: 0 12px 28px rgba(255,107,107,0.25);
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -230,7 +192,7 @@ footer {
     text-align: center;
     padding: 40px 0;
     margin-top: 90px;
-    background: #f9f9fb;
+    background: var(--color-gris);
     color: #6c6f7a;
     font-size: 0.95rem;
     border-top: 1px solid #e0e0e0;
@@ -241,25 +203,6 @@ footer:hover {
     background: #f1f1f5;
 }
 
-/* ---------------- CÓDIGO ---------------- */
-.contenido pre {
-    background: #f4f6fa;
-    color: #3a86ff;
-    padding: 22px;
-    border-radius: 12px;
-    overflow-x: auto;
-    margin-top: 20px;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.95rem;
-    border: 1px solid #e0e0e0;
-    transition: all 0.3s ease;
-}
-
-.contenido pre:hover {
-    background: #eef1f7;
-    border-color: #3a86ff;
-}
-
 /* ---------------- ANIMACIONES ---------------- */
 @keyframes float {
     0% { transform: translateY(0px); }
@@ -267,51 +210,52 @@ footer:hover {
     100% { transform: translateY(0px); }
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* ---------------- SCROLL ---------------- */
 html {
     scroll-behavior: smooth;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 700px) {
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 25px;
-    }
-
-    .titulo-container {
-        text-align: center;
-        min-width: auto;
-        flex-grow: 0;
-    }
-
-    .logo-nombre {
-        justify-content: center;
-    }
-
-    .nombre-container p {
-        font-size: 1.1rem;
-    }
-
-    .logo-container img {
-        width: 50px;
-    }
-
-    .titulo-container h1 {
-        font-size: 2rem;
-    }
-
-    .titulo-container p {
-        font-size: 1rem;
-    }
+/* ---------------- MODO OSCURO BOTÓN ---------------- */
+.toggle-dark {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--sombra-suave);
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
 
-@media (max-width: 600px) {
-    .semanas ul,
-    .lista-semanas {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-    }
+.toggle-dark:hover {
+    background: var(--color-acento);
+    transform: rotate(20deg) scale(1.1);
+}
+/* ---------------- LOGO ---------------- */
+header .logo {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 70px;      /* ajusta el tamaño según tu logo */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1) rotate(5deg);
 }

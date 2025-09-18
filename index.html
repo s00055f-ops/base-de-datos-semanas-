@@ -2,26 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablero - Proyecto Base de Datos</title>
     <link rel="stylesheet" href="estilos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-          <div class="logo-nombre">
-            <img src="descarga.jpg" alt="Logo Universidad" />
-            <p class="nombre">Antony Daniel Leiva Cardenas</p>
-          </div>
-          <div class="titulo-container">
-            <h1>Repositorio de Actividades Semanales</h1>
-            <p>Repositorio de Base de Datos II</p>
-          </div>
-        </div>
-      </header>
-      
+    <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">🌙</button>
 
+    <!-- ====== ENCABEZADO ====== -->
+   <!-- ====== ENCABEZADO ====== -->
+<header>
+    <div class="header-container">
+        <!-- Logo a la izquierda -->
+         <img src="tu-logo.png" alt="Logo" class="logo">
+   
+   
+
+        <!-- Títulos al centro -->
+        <div class="titulo-container">
+            <h1>Repositorio de Actividades Semanales</h1>
+            <p>Base de Datos II</p>
+        </div>
+
+        <!-- Nombre a la derecha -->
+        <div class="nombre-container">
+            <p class="nombre">Antony Daniel Leiva Cárdenas</p>
+        </div>
+    </div>
+</header>
+
+
+    <!-- ====== CONTENIDO PRINCIPAL ====== -->
     <main>
         <!-- Índice de semanas -->
         <section class="semanas container">
@@ -46,14 +58,22 @@
             </ul>
         </section>
 
-        <!-- Info general -->
+        <!-- Información general -->
         <section class="info container">
             <h2>Repositorio</h2>
-            <p>Este repositorio se actualiza semanalmente con ejercicios y prácticas del curso de bases de datos II.</p>
-            <a href="https://github.com/s00055f-ops/base-de-datos-semanas-" target="_blank" class="btn">Ver en GitHub</a>
+            <p>
+                Este repositorio se actualiza semanalmente con ejercicios y prácticas 
+                del curso de <strong>Bases de Datos II</strong>.
+            </p>
+            <a href="https://github.com/s00055f-ops/base-de-datos-semanas-" 
+               target="_blank" 
+               class="btn">
+               Ver en GitHub
+            </a>
         </section>
     </main>
 
+    <!-- ====== PIE DE PÁGINA ====== -->
     <footer>
         <div class="container">
             <p>© 2025 Base de Datos II | Actualiza semanalmente</p>
