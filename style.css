@@ -1,7 +1,6 @@
 /* ----------------- RESET ----------------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* ----------------- FONDO PRINCIPAL ----------------- */
 html, body {
   height: 100%;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
@@ -11,7 +10,7 @@ html, body {
               url("https://media.istockphoto.com/id/2162643372/photo/beautiful-planet-earth-with-night-lights-of-asian-cities-views-from-space-amazing-night.jpg?s=2048x2048&w=is&k=20&c=Be4AYn5voG-p7xNrSy3pKJSRBl2xaabvxpLx4D5y0mA=")
               no-repeat center center fixed;
   background-size: cover;
-  color: #eee;
+  color: #f5f5f5;
   line-height: 1.6;
   animation: moverFondo 25s infinite alternate ease-in-out;
 }
@@ -72,12 +71,12 @@ header {
 }
 .logo:hover { transform: rotate(8deg) scale(1.15); }
 .titulo { flex: 1; margin-left: 25px; }
-.titulo h1 { font-size: 2.1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+.titulo h1 { font-size: 2.1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); color: #00f2fe; }
 .titulo p { font-size: 1.15rem; margin-top: 6px; opacity: 0.9; }
 nav .menu { list-style: none; display: flex; gap: 18px; }
 nav button {
-  background: rgba(255,255,255,0.95);
-  color: #2c3e50;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
@@ -87,7 +86,7 @@ nav button {
   box-shadow: 0 3px 6px rgba(0,0,0,0.25);
 }
 nav button:hover {
-  background: #e0e7ff;
+  background: #00c6ff;
   transform: translateY(-3px);
 }
 
@@ -99,50 +98,28 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
   margin: 40px auto;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.5);
   max-width: 950px;
   backdrop-filter: blur(12px);
-  position: relative; /* necesario para el ::before */
-  overflow: hidden;
-  background-image: url("https://media.istockphoto.com/id/1736892714/photo/italy-france-alpes-city-lights.jpg?s=2048x2048&w=is&k=20&c=st7zKw6vAOCSu1cW6KmuVYvlsH0K-quXZRyBKxvcNcM=");
-  background-size: cover;
-  background-position: center;
-}
-
-/* Overlay oscuro para bajar brillo */
-main::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.45); /* ajusta el nivel de oscuridad */
-  z-index: 0;
-  border-radius: 20px;
-}
-
-main > * {
   position: relative;
-  z-index: 1; /* mantiene el texto y botones por encima */
+  overflow: hidden;
 }
-
-
 main h2 {
   font-size: 2.4rem;
   margin-bottom: 15px;
-  color: #fff;
+  color: #00f2fe;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 main p {
   font-size: 1.25rem;
-  color: #f1f1f1;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  color: #f8f8f8;
 }
 .btn {
   display: inline-block;
-  background: #4a90e2;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   color: white;
   padding: 12px 26px;
   margin-top: 25px;
@@ -153,7 +130,7 @@ main p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.35);
 }
 .btn:hover {
-  background: #3a78c2;
+  background: #00c6ff;
   transform: scale(1.08);
 }
 
@@ -163,14 +140,14 @@ main p {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.75);
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.4s ease;
   z-index: 1000;
 }
 .modal-contenido {
-  background: rgba(15, 20, 40, 0.95);
+  background: rgba(20, 25, 45, 0.95);
   backdrop-filter: blur(12px);
   padding: 35px;
   border-radius: 22px;
@@ -180,33 +157,11 @@ main p {
   animation: zoomIn 0.5s ease;
   box-shadow: 0 15px 40px rgba(0,0,0,0.7);
   position: relative;
-  overflow: hidden;
-}
-.modal-contenido::before {
-  content: "";
-  position: absolute;
-  top: -40%; left: -40%;
-  width: 180%; height: 180%;
-  background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
-  animation: rotarLuz 25s infinite linear;
-  z-index: 0;
-}
-@keyframes rotarLuz {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 .modal-contenido h2 {
   font-size: 2rem;
-  color: #fff;
+  color: #00f2fe;
   margin-bottom: 25px;
-  text-shadow: 0 0 12px rgba(0, 224, 255, 0.9);
-  position: relative;
-  z-index: 1;
-  animation: brilloTexto 2.5s infinite alternate;
-}
-@keyframes brilloTexto {
-  from { text-shadow: 0 0 10px #00e0ff, 0 0 20px #00aaff; }
-  to   { text-shadow: 0 0 20px #00ffff, 0 0 35px #0099ff; }
 }
 .cerrar {
   float: right;
@@ -214,8 +169,6 @@ main p {
   cursor: pointer;
   color: #bbb;
   transition: 0.3s;
-  z-index: 10;
-  position: relative;
 }
 .cerrar:hover { color: red; transform: rotate(90deg); }
 
@@ -225,8 +178,6 @@ main p {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 18px;
   margin-top: 25px;
-  position: relative;
-  z-index: 1;
 }
 .card-semana {
   background: linear-gradient(135deg, #2a2a72, #009ffd);
@@ -246,10 +197,6 @@ main p {
   background: linear-gradient(135deg, #00c6ff, #0072ff);
   box-shadow: 0 12px 25px rgba(0, 200, 255, 0.6);
 }
-.card-semana:active {
-  transform: scale(0.97);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
 
 /* ----------------- SOBRE MÍ ----------------- */
 .sobreMi-box {
@@ -259,24 +206,11 @@ main p {
   background: rgba(10, 20, 40, 0.92);
   color: #ffffff;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
-  animation: zoomIn 0.6s ease;
-  position: relative;
-  overflow: hidden;
-}
-.sobreMi-box::before {
-  content: "";
-  position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.12) 0%, transparent 70%);
-  animation: rotarLuz 18s infinite linear;
 }
 .sobreMi-contenido {
   display: flex;
   align-items: flex-start;
   gap: 35px;
-  position: relative;
-  z-index: 1;
 }
 .sobreMi-foto {
   width: 200px;
@@ -285,11 +219,6 @@ main p {
   object-fit: cover;
   box-shadow: 0 12px 30px rgba(0,0,0,0.7);
   border: 3px solid #00d4ff;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.sobreMi-foto:hover {
-  transform: scale(1.1) rotate(2deg);
-  box-shadow: 0 15px 40px rgba(0,212,255,0.8);
 }
 .sobreMi-texto {
   flex: 1;
@@ -297,32 +226,10 @@ main p {
   line-height: 1.9;
   color: #f8f9fa;
   text-align: left;
-  animation: fadeIn 1s ease;
 }
 .sobreMi-texto strong {
   color: #00e0ff;
-  font-weight: 700;
   text-shadow: 0 0 8px rgba(0,224,255,0.8);
-}
-.sobreMi-texto p { margin-bottom: 15px; color: #e6e6e6; }
-
-/* Chips */
-.chip {
-  display: inline-block;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  color: white;
-  padding: 7px 16px;
-  border-radius: 22px;
-  font-size: 0.95rem;
-  margin: 5px;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.chip:hover {
-  transform: translateY(-4px) scale(1.08);
-  box-shadow: 0 6px 20px rgba(255, 75, 43, 0.7);
 }
 
 /* ----------------- REPOSITORIO ----------------- */
@@ -332,27 +239,19 @@ main p {
   border-radius: 20px;
   background: linear-gradient(145deg, #fefefe, #f2f6fb);
   box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-  animation: zoomIn 0.4s ease;
 }
 .repo-box h2 {
   font-size: 1.7rem;
   color: #2c3e50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
   margin-bottom: 15px;
 }
 .repo-box p { color: #555; margin-bottom: 22px; }
 .repo-box .btn {
   background: #0077ff;
-  padding: 12px 28px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
 }
 .repo-box .btn:hover {
   background: #005fcc;
-  transform: scale(1.08);
 }
 
 /* ----------------- FOOTER ----------------- */
@@ -362,7 +261,6 @@ footer {
   background: rgba(20,20,20,0.9);
   color: white;
   margin-top: auto;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.4);
   font-size: 0.95rem;
   backdrop-filter: blur(6px);
 }
