@@ -85,19 +85,19 @@
 
   <!-- Modal: Sobre mí -->
   <div id="modal-sobreMi" class="modal">
-    <div class="modal-contenido">
+    <div class="sobreMi-box">
       <span class="cerrar" onclick="cerrarModal('sobreMi')">&times;</span>
-      <h2>👤 Sobre mí</h2>
+      <h2 style="text-align:center; margin-bottom: 15px;">👤 Sobre mí</h2>
 
-      <div style="display: flex; align-items: center; gap: 20px; text-align: left;">
+      <div class="sobreMi-contenido">
         <!-- Foto -->
-        <img src="yo.JPG" alt="Foto de Antony" style="width:120px; height:120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+        <img src="yo.JPG" alt="Foto de Antony" class="sobreMi-foto">
 
         <!-- Texto -->
-        <div>
-          <p id="sobre-mi-texto">
+        <div class="sobreMi-texto">
+          <p>
             Hola, me llamo <b>Antony Daniel Leiva Cárdenas</b>, tengo <b>19 años</b> y soy estudiante de la 
-            <b>Universidad Peruana Los Andes</b>.  
+            <b>Universidad Peruana Los Andes</b>.
           </p>
           <p>
             Actualmente curso la carrera de <b>Ingeniería de Sistemas</b>.  
@@ -122,7 +122,7 @@
       <p>
         Aquí encontrarás todos los avances semanales con código, ejercicios y prácticas.
       </p>
-      <a href="https://github.com/s00055f-ops/base-de-datos-semanas-" class="btn">Ir a GitHub</a>
+      <a href="https://github.com/s00055f-ops/base-de-datos-semanas-" target="_blank" class="btn">Ir a GitHub</a>
     </div>
   </div>
 
@@ -134,4 +134,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
