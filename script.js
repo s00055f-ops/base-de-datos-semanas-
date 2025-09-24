@@ -14,59 +14,59 @@ const semanas = {
       { url: "https://docs.google.com/document/d/1IGBml0DSXOFgcUwRv6TUprx-FAC5YSo6GTD-s8_zwzg/edit?usp=sharing", texto: "📘 EJEMPLO 1" }
     ] 
   },
-  3: { desc: "Trabajo de la semana 3: Consultas SQL básicas", links: [
+  3: { desc: "Trabajo de la semana 3: Proximamente", links: [
       { url: "https://mi-trabajo-semana3.com", texto: "🔗 Trabajo" }
     ] 
   },
-  4: { desc: "Trabajo de la semana 4: Joins y subconsultas", links: [
+  4: { desc: "Trabajo de la semana 4: Proximamente", links: [
       { url: "https://mi-trabajo-semana4.com", texto: "🔗 Trabajo" }
     ] 
   },
-  5: { desc: "Trabajo de la semana 5: Vistas y procedimientos", links: [
+  5: { desc: "Trabajo de la semana 5: Vistas y Proximamente", links: [
       { url: "https://mi-trabajo-semana5.com", texto: "🔗 Trabajo" }
     ] 
   },
-  6: { desc: "Trabajo de la semana 6: Triggers y funciones", links: [
+  6: { desc: "Trabajo de la semana 6: Proximamente", links: [
       { url: "https://mi-trabajo-semana6.com", texto: "🔗 Trabajo" }
     ] 
   },
-  7: { desc: "Trabajo de la semana 7: Índices y optimización", links: [
+  7: { desc: "Trabajo de la semana 7: Proximamente", links: [
       { url: "https://mi-trabajo-semana7.com", texto: "🔗 Trabajo" }
     ] 
   },
-  8: { desc: "Trabajo de la semana 8: Transacciones", links: [
+  8: { desc: "Trabajo de la semana 8:Proximamente", links: [
       { url: "https://mi-trabajo-semana8.com", texto: "🔗 Trabajo" }
     ] 
   },
-  9: { desc: "Trabajo de la semana 9: Seguridad en BD", links: [
+  9: { desc: "Trabajo de la semana 9: Proximamente", links: [
       { url: "https://mi-trabajo-semana9.com", texto: "🔗 Trabajo" }
     ] 
   },
-  10: { desc: "Trabajo de la semana 10: Backup y restore", links: [
+  10: { desc: "Trabajo de la semana 10: Proximamente", links: [
       { url: "https://mi-trabajo-semana10.com", texto: "🔗 Trabajo" }
     ] 
   },
-  11: { desc: "Trabajo de la semana 11: Proyecto intermedio", links: [
+  11: { desc: "Trabajo de la semana 11: Proximamente", links: [
       { url: "https://mi-trabajo-semana11.com", texto: "🔗 Trabajo" }
     ] 
   },
-  12: { desc: "Trabajo de la semana 12: Replicación", links: [
+  12: { desc: "Trabajo de la semana 12: Proximamente", links: [
       { url: "https://mi-trabajo-semana12.com", texto: "🔗 Trabajo" }
     ] 
   },
-  13: { desc: "Trabajo de la semana 13: Sharding", links: [
+  13: { desc: "Trabajo de la semana 13: Proximamente", links: [
       { url: "https://mi-trabajo-semana13.com", texto: "🔗 Trabajo" }
     ] 
   },
-  14: { desc: "Trabajo de la semana 14: Data warehouse", links: [
+  14: { desc: "Trabajo de la semana 14: Proximamente", links: [
       { url: "https://mi-trabajo-semana14.com", texto: "🔗 Trabajo" }
     ] 
   },
-  15: { desc: "Trabajo de la semana 15: Big Data y NoSQL", links: [
+  15: { desc: "Trabajo de la semana 15: Proximamente", links: [
       { url: "https://mi-trabajo-semana15.com", texto: "🔗 Trabajo" }
     ] 
   },
-  16: { desc: "Trabajo final: Proyecto de Base de Datos", links: [
+  16: { desc: "Trabajo final: Proximamente", links: [
       { url: "https://mi-trabajo-semana16.com", texto: "🔗 Proyecto final" }
     ] 
   }
