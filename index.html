@@ -1,86 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tablero - Proyecto Base de Datos</title>
-    <link rel="stylesheet" href="estilos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorio de Actividades Semanales</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">🌙</button>
+  <!-- Barra superior de login -->
+  <div class="topbar">
+    <form class="login-form">
+      <input type="text" placeholder="Usuario" id="usuario">
+      <input type="password" placeholder="Contraseña" id="contrasena">
+      <button type="button" onclick="login()">Ingresar</button>
+    </form>
+    <span id="admin-msg"></span>
+  </div>
 
-    <!-- ====== ENCABEZADO ====== -->
-   <!-- ====== ENCABEZADO ====== -->
-<header>
-    <div class="header-container">
-        <!-- Logo a la izquierda -->
-         <img src="descarga.jpg" alt="Logo" class="logo">
-   
-   
-
-        <!-- Títulos al centro -->
-        <div class="titulo-container">
-            <h1>Repositorio de Actividades Semanales</h1>
-            <p>Base de Datos II</p>
-        </div>
-
-        <!-- Nombre a la derecha -->
-        <div class="nombre-container">
-            <p class="nombre">Antony Daniel Leiva Cárdenas</p>
-        </div>
+  <!-- Encabezado -->
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <div class="titulo">
+      <h1>Repositorio de Actividades Semanales</h1>
+      <p>Antony Daniel Leiva Cárdenas</p>
+      <small>Base de Datos II</small>
     </div>
-</header>
+    <nav>
+      <ul class="menu">
+        <li><button onclick="mostrarModal('semanas')">📅 Semanas</button></li>
+        <li><button onclick="mostrarModal('sobreMi')">👤 Sobre mí</button></li>
+        <li><button onclick="mostrarModal('repositorio')">📂 Repositorio</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section>
+      <h2>Bienvenido</h2>
+      <p>
+        Este repositorio se actualiza semanalmente con ejercicios y prácticas del curso de <b>Bases de Datos II</b>.
+      </p>
+      <a href="https://github.com" target="_blank" class="btn">Ver en GitHub 🚀</a>
+    </section>
+  </main>
+
+  <!-- Modal: Lista de Semanas -->
+  <div id="modal-semanas" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('semanas')">&times;</span>
+      <h2>📅 Semanas</h2>
+      <div id="grid-semanas" class="grid-semanas">
+        <!-- 16 semanas -->
+        <div class="card-semana" onclick="abrirSemana(1)">Semana 1</div>
+        <div class="card-semana" onclick="abrirSemana(2)">Semana 2</div>
+        <div class="card-semana" onclick="abrirSemana(3)">Semana 3</div>
+        <div class="card-semana" onclick="abrirSemana(4)">Semana 4</div>
+        <div class="card-semana" onclick="abrirSemana(5)">Semana 5</div>
+        <div class="card-semana" onclick="abrirSemana(6)">Semana 6</div>
+        <div class="card-semana" onclick="abrirSemana(7)">Semana 7</div>
+        <div class="card-semana" onclick="abrirSemana(8)">Semana 8</div>
+        <div class="card-semana" onclick="abrirSemana(9)">Semana 9</div>
+        <div class="card-semana" onclick="abrirSemana(10)">Semana 10</div>
+        <div class="card-semana" onclick="abrirSemana(11)">Semana 11</div>
+        <div class="card-semana" onclick="abrirSemana(12)">Semana 12</div>
+        <div class="card-semana" onclick="abrirSemana(13)">Semana 13</div>
+        <div class="card-semana" onclick="abrirSemana(14)">Semana 14</div>
+        <div class="card-semana" onclick="abrirSemana(15)">Semana 15</div>
+        <div class="card-semana" onclick="abrirSemana(16)">Semana 16</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Info de cada Semana -->
+  <div id="modal-semana-info" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('semana-info')">&times;</span>
+      <h2 id="titulo-semana"></h2>
+      <p id="descripcion-semana"></p>
+      <!-- Aquí van los botones dinámicos -->
+      <div id="links-semana"></div>
+    </div>
+  </div>
+
+  <!-- Modal: Sobre mí -->
+<!-- Modal: Sobre mí -->
+<div id="modal-sobreMi" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal('sobreMi')">&times;</span>
+    <h2>👤 Sobre mí</h2>
+
+    <div style="display: flex; align-items: center; gap: 20px; text-align: left;">
+      <!-- Foto -->
+      <img src="img/foto.jpg" alt="Foto de Antony" style="width:120px; height:120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+
+      <!-- Texto -->
+      <div>
+        <p id="sobre-mi-texto">
+          Hola, me llamo <b>Antony Daniel Leiva Cárdenas</b>, tengo <b>19 años</b> y soy estudiante de la 
+          <b>Universidad Peruana Los Andes</b>.  
+        </p>
+        <p>
+          Actualmente curso la carrera de <b>Ingeniería de Sistemas</b>.  
+          Mis pasiones son la <b>programación</b>, el <b>diseño web</b> y un poco de las <b>bases de datos</b>.  
+        </p>
+      </div>
+    </div>
+
+    <!-- Editor (solo admin) -->
+    <div id="editor-sobreMi" class="editor oculto">
+      <textarea id="sobreMiInput"></textarea>
+      <button onclick="guardarSobreMi()">Guardar</button>
+    </div>
+  </div>
+</div>
 
 
-    <!-- ====== CONTENIDO PRINCIPAL ====== -->
-    <main>
-        <!-- Índice de semanas -->
-        <section class="semanas container">
-            <h2>Semanas</h2>
-            <ul class="lista-semanas">
-                <li><a href="semana1.html">Semana 1</a></li>
-                <li><a href="semana2.html">Semana 2</a></li>
-                <li><a href="semana3.html">Semana 3</a></li>
-                <li><a href="semana4.html">Semana 4</a></li>
-                <li><a href="semana5.html">Semana 5</a></li>
-                <li><a href="semana6.html">Semana 6</a></li>
-                <li><a href="semana7.html">Semana 7</a></li>
-                <li><a href="semana8.html">Semana 8</a></li>
-                <li><a href="semana9.html">Semana 9</a></li>
-                <li><a href="semana10.html">Semana 10</a></li>
-                <li><a href="semana11.html">Semana 11</a></li>
-                <li><a href="semana12.html">Semana 12</a></li>
-                <li><a href="semana13.html">Semana 13</a></li>
-                <li><a href="semana14.html">Semana 14</a></li>
-                <li><a href="semana15.html">Semana 15</a></li>
-                <li><a href="semana16.html">Semana 16</a></li>
-            </ul>
-        </section>
+  <!-- Modal: Repositorio -->
+  <div id="modal-repositorio" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('repositorio')">&times;</span>
+      <h2>📂 Repositorio</h2>
+      <p>
+        Aquí encontrarás todos los avances semanales con código, ejercicios y prácticas.
+      </p>
+      <a href="https://github.com" target="_blank" class="btn">Ir a GitHub</a>
+    </div>
+  </div>
 
-        <!-- Información general -->
-        <section class="info container">
-            <h2>Repositorio</h2>
-            <p>
-                Este repositorio se actualiza semanalmente con ejercicios y prácticas 
-                del curso de <strong>Bases de Datos II</strong>.
-            </p>
-            <a href="https://github.com/s00055f-ops/base-de-datos-semanas-" 
-               target="_blank" 
-               class="btn">
-               Ver en GitHub
-            </a>
-                  <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">🌙</button>
-        </section>
-    </main>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Base de Datos II | Actualiza semanalmente</p>
+  </footer>
 
-    <!-- ====== PIE DE PÁGINA ====== -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Base de Datos II | Actualiza semanalmente</p>
-        </div>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
