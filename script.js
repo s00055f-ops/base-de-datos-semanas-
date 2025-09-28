@@ -5,14 +5,14 @@
         // Datos de las semanas con enlaces editables (mejorados con más detalle)
         let semanasData = {
             1: { 
-                desc: "Fundamentos y Diagramas Entidad-Relación", 
+                desc: "Informe Técnico Comparativo Y manual de Git Hub", 
                 links: [
                     { url: "https://www.canva.com/design/DAGzMAgwKcs/cDgWGMPUGi-ReOzBb-1Q4g/edit?utm_content=DAGzMAgwKcs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton", texto: "📊 Informe Técnico Comparativo: Arquitecturas Centralizadas, Cliente- Servidor y Distribuidas" },
                     { url: "https://docs.google.com/document/d/1iA9bNV7w68wZU6t-g1Qa_psu4yUDOXWVNM9rRp6vuK4/edit?usp=sharing", texto: "📄 Manual: Creación de una cuenta en GitHub" },
                 ] 
             },
             2: { 
-                desc: "Instalación y Configuración de SQL Server Management Studio", 
+                desc: "Guía de Instalación SQL Server y Ejemplo 1", 
                 links: [
                     { url: "https://docs.google.com/document/d/1-s3chNFEed1sG2SHfxuUaQUiHRUp-loLfKhLpgHzv9E/edit?usp=sharing", texto: "📘 Guía de Instalación SQL Server" },
                     { url: "https://docs.google.com/document/d/1IGBml0DSXOFgcUwRv6TUprx-FAC5YSo6GTD-s8_zwzg/edit?usp=sharing", texto: "EJEMPLO 1" },
@@ -20,98 +20,98 @@
                 ] 
             },
             3: { 
-                desc: "Diseño de Bases de Datos y Normalización", 
+                desc: "SEMANA 3", 
                 links: [
                     { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             4: { 
-                desc: "SQL DDL - Creación de Estructuras de Base de Datos", 
+                desc: "SEMANA 4", 
                 links: [
                   { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             5: { 
-                desc: "SQL DML - Consultas Básicas y Manipulación de Datos", 
+                desc: "SEMANA 5", 
                 links: [
                    { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             6: { 
-                desc: "Consultas Avanzadas - JOINS y Subconsultas", 
+                desc: "SEMANA 6", 
                 links: [
                  { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             7: { 
-                desc: "Procedimientos Almacenados y Funciones", 
+                desc: "SEMANA 7", 
                 links: [
                   { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             8: { 
-                desc: "Triggers y Automatización de Procesos", 
+                desc: "SEMANA 8", 
                 links: [
                  { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             9: { 
-                desc: "Optimización y Análisis de Performance", 
+                desc: "SEMANA 9", 
                 links: [
                    { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             10: { 
-                desc: "Índices y Estructuras de Datos Avanzadas", 
+                desc: "SEMANA 10", 
                 links: [
       { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             11: { 
-                desc: "Transacciones, Concurrencia y Bloqueos", 
+                desc: "SEMANA 11", 
                 links: [
                       { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             12: { 
-                desc: "Seguridad y Administración de Usuarios", 
+                desc: "SEMANA 12", 
                 links: [
                         { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             13: { 
-                desc: "Backup, Recovery y Mantenimiento", 
+                desc: "SEMANA 13", 
                 links: [
                     { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             14: { 
-                desc: "Integración con Aplicaciones y APIs", 
+                desc: "SEMANA 14", 
                 links: [
                    { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             15: { 
-                desc: "Proyecto Final - Desarrollo Integral (Parte I)", 
+                desc: "SEMANA 15", 
                 links: [
                    { url: "", texto: "📋 EN DESARROLLO" },
             
                 ] 
             },
             16: { 
-                desc: "Proyecto Final - Presentación y Entrega", 
+                desc: "SEMANA 16", 
                 links: [
                     { url: "", texto: "📋 EN DESARROLLO" },
             
