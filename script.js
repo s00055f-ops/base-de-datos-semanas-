@@ -29,7 +29,7 @@
                 ] 
             },
             4: { 
-                desc: "SEMANA 4", 
+                desc: "Actividades de Clase", 
                 links: [
                   { url: "https://drive.google.com/drive/folders/1w_jBoerVY10vfM6kElLKoYXYXV3zuJD4?usp=sharing", texto: "📋Actividades de Clase" },
             
