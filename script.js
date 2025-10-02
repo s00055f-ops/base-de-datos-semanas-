@@ -9,6 +9,8 @@
                 links: [
                     { url: "https://www.canva.com/design/DAGzMAgwKcs/cDgWGMPUGi-ReOzBb-1Q4g/edit?utm_content=DAGzMAgwKcs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton", texto: "📊 Informe Técnico Comparativo: Arquitecturas Centralizadas, Cliente- Servidor y Distribuidas" },
                     { url: "https://docs.google.com/document/d/1iA9bNV7w68wZU6t-g1Qa_psu4yUDOXWVNM9rRp6vuK4/edit?usp=sharing", texto: "📄 Manual: Creación de una cuenta en GitHub" },
+                  { url: "https://docs.google.com/document/d/1SW5tpWgkpjzzfOfTWFI2-Y7z0oStLC_JaKF6Mhj9Hcw/edit?usp=sharing", texto: "📄 MANUAL PARA SUBIR LA PAGINA WEB A GIT HUB" },
+              
               
                   
                 ] 
