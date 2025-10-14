@@ -40,7 +40,9 @@
             5: { 
                 desc: "SEMANA 5", 
                 links: [
-                   { url: "", texto: "📋 EN DESARROLLO" },
+                   { url: "https://docs.google.com/document/d/1SIdAXJ-Ba01_XgxYU5jRowiLhWV1V6wPQ3s5eWemM5Q/edit?usp=sharing", texto: "MANUAL PARA SUBIR COPIAR MI REPOSITORIO A AZURE" },
+                   { url: "https://docs.google.com/document/d/15hhtDbf09ot1yGM4NlEv0aC0AEqL5pMVmmOH5sToY2c/edit?usp=sharing", texto: "MANUAL PARA CREAR CUENTA EN MICROSOFT AZURE" },
+             { url: "", texto: "Practica 2...En proceso" },
             
                 ] 
             },
