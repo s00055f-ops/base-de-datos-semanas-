@@ -24,9 +24,9 @@
                 ] 
             },
             3: { 
-                desc: "SEMANA 3", 
+                desc: "Cuadro Comparativo", 
                 links: [
-                    { url: "", texto: "📋 EN DESARROLLO" },
+                    { url: "https://docs.google.com/document/d/1_pKP5rK0kMUC5FdPw-1G2amaPCWln3FiDSyka2MKBz8/edit?usp=sharing", texto: "Cuadro comparativo" },
             
                 ] 
             },
@@ -38,7 +38,7 @@
                 ] 
             },
             5: { 
-                desc: "SEMANA 5", 
+                desc: "Manual de Crear cuenta de Azure y pasar repositorio desde Git Hub", 
                 links: [
                    { url: "https://docs.google.com/document/d/1SIdAXJ-Ba01_XgxYU5jRowiLhWV1V6wPQ3s5eWemM5Q/edit?usp=sharing", texto: "MANUAL PARA SUBIR COPIAR MI REPOSITORIO A AZURE" },
                    { url: "https://docs.google.com/document/d/15hhtDbf09ot1yGM4NlEv0aC0AEqL5pMVmmOH5sToY2c/edit?usp=sharing", texto: "MANUAL PARA CREAR CUENTA EN MICROSOFT AZURE" },
