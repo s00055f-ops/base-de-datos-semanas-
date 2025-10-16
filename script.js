@@ -49,7 +49,7 @@
             6: { 
                 desc: "SEMANA 6", 
                 links: [
-                 { url: "", texto: "📋 EN DESARROLLO" },
+                 { url: "https://docs.google.com/document/d/1kU_GcW5DGhJ1NUaRoFOIeDxGbspCdr1TEGMdFmFD-qI/edit?usp=sharing", texto: "QhantuPerú" },
             
                 ] 
             },
