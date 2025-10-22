@@ -50,6 +50,8 @@
                 desc: "SEMANA 6", 
                 links: [
                  { url: "https://docs.google.com/document/d/1kU_GcW5DGhJ1NUaRoFOIeDxGbspCdr1TEGMdFmFD-qI/edit?usp=sharing", texto: "QhantuPerú" },
+                  { url: "https://docs.google.com/document/d/1ofpzOQ930lm8WVtacScDyGD52SIUN1RXr55GDA826vY/edit?usp=sharing", texto: "Enunciados-Semana 6" },
+            
             
                 ] 
             },
