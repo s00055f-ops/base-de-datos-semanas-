@@ -58,7 +58,7 @@
             7: { 
                 desc: "SEMANA 7", 
                 links: [
-                  { url: "", texto: "📋 EN DESARROLLO" },
+                  { url: "https://docs.google.com/document/d/1yVv8gweAt0LfHSa5o6QUoJHU0Krx6q4spShacvmEaPo/edit?usp=sharing", texto: "📋 EJERCI9CIOS PROPUESTOS" },
             
                 ] 
             },
