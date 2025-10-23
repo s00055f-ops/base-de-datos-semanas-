@@ -47,23 +47,23 @@
                 ] 
             },
             6: { 
-                desc: "SEMANA 6", 
+                desc: "Enunciados", 
                 links: [
-                 { url: "https://docs.google.com/document/d/1kU_GcW5DGhJ1NUaRoFOIeDxGbspCdr1TEGMdFmFD-qI/edit?usp=sharing", texto: "QhantuPerú" },
+              
                   { url: "https://docs.google.com/document/d/1ofpzOQ930lm8WVtacScDyGD52SIUN1RXr55GDA826vY/edit?usp=sharing", texto: "Enunciados-Semana 6" },
             
             
                 ] 
             },
             7: { 
-                desc: "SEMANA 7", 
+                desc: "EJERCICIOS PROPUESTOS", 
                 links: [
-                  { url: "https://docs.google.com/document/d/1yVv8gweAt0LfHSa5o6QUoJHU0Krx6q4spShacvmEaPo/edit?usp=sharing", texto: "📋 EJERCI9CIOS PROPUESTOS" },
+                  { url: "https://docs.google.com/document/d/1yVv8gweAt0LfHSa5o6QUoJHU0Krx6q4spShacvmEaPo/edit?usp=sharing", texto: "📋 EJERCICIOS PROPUESTOS" },
             
                 ] 
             },
             8: { 
-                desc: "SEMANA 8", 
+                desc: "5 MANUALES", 
                 links: [
                  { url: "https://docs.google.com/document/d/15hhtDbf09ot1yGM4NlEv0aC0AEqL5pMVmmOH5sToY2c/edit?usp=sharing", texto: "MANUAL PARA CREAR CUENTA EN MICROSOFT AZURE" },
                  { url: "https://docs.google.com/document/d/1XgeTMTWXrZdfMBODalPkf3c5DRHrSn9dx-Jao3scL80/edit?usp=sharing", texto: "MANUAL PARA CREAR 9 TABLAS MICROSOFT AZURE" },
