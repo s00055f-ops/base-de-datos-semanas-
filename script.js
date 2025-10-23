@@ -41,7 +41,7 @@
                 desc: "Manual de Crear cuenta de Azure y pasar repositorio desde Git Hub", 
                 links: [
                    { url: "https://docs.google.com/document/d/1SIdAXJ-Ba01_XgxYU5jRowiLhWV1V6wPQ3s5eWemM5Q/edit?usp=sharing", texto: "MANUAL PARA SUBIR COPIAR MI REPOSITORIO A AZURE" },
-                   { url: "https://docs.google.com/document/d/15hhtDbf09ot1yGM4NlEv0aC0AEqL5pMVmmOH5sToY2c/edit?usp=sharing", texto: "MANUAL PARA CREAR CUENTA EN MICROSOFT AZURE" },
+                
              { url: "", texto: "Practica 2...En proceso" },
             
                 ] 
@@ -65,7 +65,11 @@
             8: { 
                 desc: "SEMANA 8", 
                 links: [
-                 { url: "", texto: "📋 EN DESARROLLO" },
+                 { url: "https://docs.google.com/document/d/15hhtDbf09ot1yGM4NlEv0aC0AEqL5pMVmmOH5sToY2c/edit?usp=sharing", texto: "MANUAL PARA CREAR CUENTA EN MICROSOFT AZURE" },
+                 { url: "https://docs.google.com/document/d/1XgeTMTWXrZdfMBODalPkf3c5DRHrSn9dx-Jao3scL80/edit?usp=sharing", texto: "MANUAL PARA CREAR 9 TABLAS MICROSOFT AZURE" },
+                   { url: "https://docs.google.com/document/d/1ok2FTj3BZrZRwqZNVClmraGn4DqMDFFKSlNukVVW_cA/edit?usp=sharing", texto: "CONEXIÓN DE AZURE CON SQL SERVER" },
+                   { url: "https://docs.google.com/document/d/1kM71k9A5gtPdErq5cAKMXJF-ujMttzWY82m4Pd9YN6g/edit?usp=sharing", texto: "INSERTAR DATOS A LA BD" },
+                   { url: "https://docs.google.com/document/d/1H_WpI8BZF1CPqKKPgRuf_z81VnL_FRMPfYtP5TlKESU/edit?usp=sharing", texto: "DIAGRAMAS" },
             
                 ] 
             },
