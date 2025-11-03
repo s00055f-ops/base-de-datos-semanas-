@@ -76,7 +76,7 @@
             9: { 
                 desc: "SEMANA 9", 
                 links: [
-                   { url: "", texto: "📋 EN DESARROLLO" },
+                   { url: "https://docs.google.com/document/d/1lgrjsgA_47_hQls2n3_3qUH1qysY720R/edit?usp=sharing&ouid=115324439131643894906&rtpof=true&sd=true", texto: "50 CONSULTAS EN SQL" },
             
                 ] 
             },
