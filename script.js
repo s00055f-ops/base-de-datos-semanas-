@@ -83,7 +83,7 @@
             10: { 
                 desc: "Administracion Esencial y Practica", 
                 links: [
-      { url: "Administración Esencial", texto: "Administración Esencial" },
+      { url: "https://docs.google.com/document/d/1FbzYmZIpXYWnX1FTac-UDGQ2UMPXImdl0zvzl2Qv72w/edit?usp=sharing", texto: "Administración Esencial" },
                         { url: "https://docs.google.com/document/d/13EO4T00CVhqZRTyk-BpeMNf5kNbxtkUCsQK_J26ksBg/edit?usp=sharing", texto: "Practica" },
                   
             
