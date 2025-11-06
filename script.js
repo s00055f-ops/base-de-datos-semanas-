@@ -213,7 +213,7 @@
                 card.onclick = () => openWeek(i);
                 
                 // Calcular progreso (simulado)
-                const progress = i <= 2 ? 100 : (i <= 5 ? 60 : (i <= 8 ? 30 : 0));
+                const progress = i <= 16 ? 100 : (i <= 5 ? 60 : (i <= 8 ? 30 : 0));
                 const progressColor = progress === 100 ? '#10b981' : (progress >= 60 ? '#f59e0b' : '#6b7280');
                 
                 card.innerHTML = `
