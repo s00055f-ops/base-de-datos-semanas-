@@ -74,16 +74,18 @@
                 ] 
             },
             9: { 
-                desc: "SEMANA 9", 
+                desc: "50 CONSULTAS", 
                 links: [
                    { url: "https://docs.google.com/document/d/1lgrjsgA_47_hQls2n3_3qUH1qysY720R/edit?usp=sharing&ouid=115324439131643894906&rtpof=true&sd=true", texto: "50 CONSULTAS EN SQL" },
             
                 ] 
             },
             10: { 
-                desc: "SEMANA 10", 
+                desc: "Administracion Esencial y Practica", 
                 links: [
-      { url: "", texto: "📋 EN DESARROLLO" },
+      { url: "Administración Esencial", texto: "Administración Esencial" },
+                        { url: "", texto: "Practica" },
+                  
             
                 ] 
             },
