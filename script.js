@@ -90,9 +90,9 @@
                 ] 
             },
             11: { 
-                desc: "SEMANA 11", 
+                desc: "Seguridad y Control de Acceso", 
                 links: [
-                      { url: "", texto: "📋 EN DESARROLLO" },
+                      { url: "https://docs.google.com/document/d/1nNNHVC_H7uEGQlBtibZvwsYvNVwTsPAxoMHBICbHsxw/edit?usp=sharing", texto: "Seguridad y Control de Acceso" },
             
                 ] 
             },
