@@ -93,6 +93,7 @@
                 desc: "Seguridad y Control de Acceso", 
                 links: [
                       { url: "https://docs.google.com/document/d/1nNNHVC_H7uEGQlBtibZvwsYvNVwTsPAxoMHBICbHsxw/edit?usp=sharing", texto: "Seguridad y Control de Acceso" },
+                    { url: "https://docs.google.com/document/d/1hjDXUQFlYC9BzI74twxaPnptDTPf4yI2i19Nvuux5Qo/edit?usp=sharing", texto: " Respaldo y recuperación" },
             
                 ] 
             },
