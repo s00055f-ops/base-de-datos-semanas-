@@ -100,7 +100,7 @@
             12: { 
                 desc: "SEMANA 12", 
                 links: [
-                        { url: "", texto: "📋 EN DESARROLLO" },
+                        { url: "https://docs.google.com/document/d/1u5YA4RW0FG0UZkXwNSlPUWvWzSpTetrK0B5Tf2nc2ew/edit?usp=sharing", texto: "Respaldo y Recuperación" },
             
                 ] 
             },
