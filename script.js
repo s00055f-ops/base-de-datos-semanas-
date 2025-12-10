@@ -87,7 +87,9 @@
                         { url: "https://docs.google.com/document/d/13EO4T00CVhqZRTyk-BpeMNf5kNbxtkUCsQK_J26ksBg/edit?usp=sharing", texto: "Practica" },
                   
             
+                
                 ] 
+            },
         
             11: { 
                 desc: "Seguridad y Control de Acceso", 
