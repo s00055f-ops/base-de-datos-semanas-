@@ -93,28 +93,31 @@
                 desc: "Seguridad y Control de Acceso", 
                 links: [
                       { url: "https://docs.google.com/document/d/1nNNHVC_H7uEGQlBtibZvwsYvNVwTsPAxoMHBICbHsxw/edit?usp=sharing", texto: "Seguridad y Control de Acceso" },
-                    { url: "https://docs.google.com/document/d/1hjDXUQFlYC9BzI74twxaPnptDTPf4yI2i19Nvuux5Qo/edit?usp=sharing", texto: " Respaldo y recuperación" },
+                    { url: "https://docs.google.com/document/d/1ggWfiBEfmHzLCvP3OdsCLwgejkOcjRexLDlKq-WnPx8/edit?usp=sharing", texto: " Práctica Semana 11" },
             
                 ] 
             },
             12: { 
-                desc: "SEMANA 12", 
+                desc: "Respaldo y Recuperación y practica ", 
                 links: [
                         { url: "https://docs.google.com/document/d/1u5YA4RW0FG0UZkXwNSlPUWvWzSpTetrK0B5Tf2nc2ew/edit?usp=sharing", texto: "Respaldo y Recuperación" },
+                  { url: "https://docs.google.com/document/d/1PcumPtSVNOdachRFmOujMI3qGTMJOxdbsqM3XAvGPzQ/edit?usp=sharing", texto: "RPráctica Semana 12
+" },
             
                 ] 
             },
             13: { 
-                desc: "SEMANA 13", 
+                desc: "MONITOREO Y RENDIMIENTO", 
                 links: [
-                    { url: "", texto: "📋 EN DESARROLLO" },
+                    { url: "https://docs.google.com/document/d/1BwOlS9Tljhrr1kWDnOWyrCN-SbbpYgPSUEy72_KsXDQ/edit?usp=sharing", texto: "Practica: MONITOREO Y RENDIMIENTO " },
+                  { url: "https://docs.google.com/document/d/1ww0gWxDdC8i8fdqACYaFvAR77BaWcWrS7Yua4LTNQD0/edit?usp=sharing", texto: "MONITOREO Y RENDIMIENTO " },
             
                 ] 
             },
             14: { 
-                desc: "SEMANA 14", 
+                desc: "Automatización y mantenimiento", 
                 links: [
-                   { url: "", texto: "📋 EN DESARROLLO" },
+                   { url: "https://docs.google.com/document/d/13Nc5eQD0lUURZ5pdavCUN6kYbF8lRAWZGqhCYMfzWeA/edit?usp=sharing", texto: "Automatización y mantenimiento" },
             
                 ] 
             },
