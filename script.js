@@ -88,7 +88,7 @@
                   
             
                 ] 
-            },
+        
             11: { 
                 desc: "Seguridad y Control de Acceso", 
                 links: [
@@ -101,8 +101,7 @@
                 desc: "Respaldo y Recuperación y practica ", 
                 links: [
                         { url: "https://docs.google.com/document/d/1u5YA4RW0FG0UZkXwNSlPUWvWzSpTetrK0B5Tf2nc2ew/edit?usp=sharing", texto: "Respaldo y Recuperación" },
-                  { url: "https://docs.google.com/document/d/1PcumPtSVNOdachRFmOujMI3qGTMJOxdbsqM3XAvGPzQ/edit?usp=sharing", texto: "RPráctica Semana 12
-" },
+                  { url: "https://docs.google.com/document/d/1PcumPtSVNOdachRFmOujMI3qGTMJOxdbsqM3XAvGPzQ/edit?usp=sharing", texto: "RPráctica Semana 12" },
             
                 ] 
             },
