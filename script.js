@@ -135,6 +135,7 @@
                 desc: "Continuidad Operativa", 
                 links: [
                     { url: "https://docs.google.com/document/d/1_GY0tcTs-P7vNKRoNfw09NS9NuwaU7FHIKR8USi-1Oo/edit?usp=sharing", texto: "Continuidad Operativa: Alta Disponibilidad y Recuperación ante Desastres (HA/DR)" },
+                    { url: "https://docs.google.com/document/d/1Ijup5wwfEGRIQhdZie7Bdw_DkBTSQM0YAEngMCU38DE/edit?usp=sharing", texto: "Practica 16    " },
             
                 ] 
             }
