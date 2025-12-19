@@ -1,4 +1,4 @@
-  // ===== VARIABLES GLOBALES =====
+    // ===== VARIABLES GLOBALES =====
         let isLoggedIn = false;
         let currentWeek = null;
         
@@ -112,6 +112,7 @@
                 links: [
                     { url: "https://docs.google.com/document/d/1BwOlS9Tljhrr1kWDnOWyrCN-SbbpYgPSUEy72_KsXDQ/edit?usp=sharing", texto: "Practica: MONITOREO Y RENDIMIENTO " },
                   { url: "https://docs.google.com/document/d/1ww0gWxDdC8i8fdqACYaFvAR77BaWcWrS7Yua4LTNQD0/edit?usp=sharing", texto: "MONITOREO Y RENDIMIENTO " },
+                   { url: "https://docs.google.com/document/d/1V0RjIESajdMg_0xMh9fLS5cARPkMnboRWSW3XDrRrAk/edit?usp=sharing", texto: "Practica" },  
             
                 ] 
             },
@@ -119,20 +120,21 @@
                 desc: "Automatización y mantenimiento", 
                 links: [
                    { url: "https://docs.google.com/document/d/13Nc5eQD0lUURZ5pdavCUN6kYbF8lRAWZGqhCYMfzWeA/edit?usp=sharing", texto: "Automatización y mantenimiento" },
+                  { url: "https://docs.google.com/document/d/14kNlaldoMyLkpfaI-gwsqqxKbAHwT0j0ypEmdFPBD5g/edit?usp=sharing", texto: "Practica" },
             
                 ] 
             },
             15: { 
-                desc: "SEMANA 15", 
+                desc: "SQL Server en la Nube: Azure y Entornos Híbridos", 
                 links: [
-                   { url: "", texto: "📋 EN DESARROLLO" },
+                   { url: "https://docs.google.com/document/d/1A1iigkse-M8vsn6cnIeijuolMFCIOnIVp2735fs1cCQ/edit?usp=sharing  ", texto: "SQL Server en la Nube: Azure y Entornos Híbridos" },
             
                 ] 
             },
             16: { 
-                desc: "SEMANA 16", 
+                desc: "Continuidad Operativa", 
                 links: [
-                    { url: "", texto: "📋 EN DESARROLLO" },
+                    { url: "https://docs.google.com/document/d/1_GY0tcTs-P7vNKRoNfw09NS9NuwaU7FHIKR8USi-1Oo/edit?usp=sharing", texto: "Continuidad Operativa: Alta Disponibilidad y Recuperación ante Desastres (HA/DR)" },
             
                 ] 
             }
